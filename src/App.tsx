@@ -7,6 +7,7 @@ import AboutSection from "./containers/AboutSection"
 import ProductSection from "./containers/ProductSection"
 import TestimonialSection from "./containers/TestimonialSection"
 import ContactSection from "./containers/ContactSection"
+import Footer from "./components/Footer"
 
 const App: React.FC = () => {
 
@@ -24,6 +25,7 @@ const App: React.FC = () => {
         <TestimonialSection />
         <ContactSection />
       </main>
+      <Footer />
     </>
   )
 }

@@ -3,8 +3,8 @@ import ProductList from "../components/product/ProductList";
 
 const ProductSection: React.FC = () => {
   return (
-    <section className="py-20 px-20">
-      <div className="mx-auto w-1/2 text-center space-y-6">
+    <section className="py-20 px-6 md:px-20">
+      <div className="mx-auto lg:w-1/2 text-center space-y-6 mb-8">
         <h1 className="text-5xl font-bold">All Product</h1>
         <p className="text-lg">
           The products we provide only for you as our service are selected from

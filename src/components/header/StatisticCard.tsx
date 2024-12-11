@@ -2,13 +2,13 @@ import React from "react";
 
 const StatisticCard: React.FC = () => {
     return (
-        <div className="px-20">
-            <div className="bg-[#286F6C] py-10 grid grid-cols-4 justify-items-center">
+        <div className="px-6 md:px-20">
+            <div className="bg-[#286F6C] py-10 grid grid-cols-2 md:grid-cols-4 gap-y-10 md:gap-y-0 justify-items-center rounded-3xl">
                 <div>
                     <h1 className="text-4xl text-white font-bold">120</h1>
                     <p className="text-white">Products</p>
                 </div>
-                <div className="border-x-2 w-full">
+                <div className="border-l-2 md:border-x-2 w-full">
                     <h1 className="text-4xl text-white font-bold text-center">120</h1>
                     <p className="text-white text-center">Products</p>
                 </div>

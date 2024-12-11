@@ -3,9 +3,9 @@ import { CheckCircleIcon } from "@heroicons/react/24/solid";
 
 const FeaturesSection: React.FC = () => {
   return (
-    <section className="px-20 py-20">
+    <section className="px-6 md:px-20 py-20">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-        <div>
+        <div className="hidden md:block">
           <img
             src="https://picsum.photos/500/500"
             alt="feature"
@@ -36,6 +36,13 @@ const FeaturesSection: React.FC = () => {
               <p className="text-lg">lorem ipsum</p>
             </div>
           </div>
+        </div>
+        <div className="block md:hidden">
+          <img
+            src="https://picsum.photos/500/500"
+            alt="feature"
+            className="w-full h-[300px] object-cover rounded-md"
+          />
         </div>
       </div>
     </section>
