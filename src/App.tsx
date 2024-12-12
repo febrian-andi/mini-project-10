@@ -9,6 +9,9 @@ import TestimonialSection from "./containers/TestimonialSection"
 import ContactSection from "./containers/ContactSection"
 import Footer from "./components/Footer"
 
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.min.css';
+
 const App: React.FC = () => {
 
   return (
@@ -17,14 +20,23 @@ const App: React.FC = () => {
         <Navbar />
       </header>
       <main className="min-h-screen">
-        <HeaderSection />
-        <FeaturesSection />
-        <CategoriesSection />
-        <AboutSection />
+        <div id="home">
+          <HeaderSection />
+        </div>
+        <div id="features">
+          <FeaturesSection />
+        </div>
+          <CategoriesSection />
+        <div id="about">
+          <AboutSection />
+        </div>
         <ProductSection />
         <TestimonialSection />
-        <ContactSection />
+        <div id="contact">
+          <ContactSection />
+        </div>
       </main>
+      <ToastContainer />
       <Footer />
     </>
   )

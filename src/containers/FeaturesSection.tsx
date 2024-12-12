@@ -1,5 +1,6 @@
 import React from "react";
 import { CheckCircleIcon } from "@heroicons/react/24/solid";
+import RoomImage from "../assets/room-image-features.png";
 
 const FeaturesSection: React.FC = () => {
   return (
@@ -7,7 +8,7 @@ const FeaturesSection: React.FC = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
         <div className="hidden md:block">
           <img
-            src="https://picsum.photos/500/500"
+            src={RoomImage}
             alt="feature"
             className="w-full h-[500px] object-cover rounded-md"
           />
@@ -39,9 +40,9 @@ const FeaturesSection: React.FC = () => {
         </div>
         <div className="block md:hidden">
           <img
-            src="https://picsum.photos/500/500"
+            src={RoomImage}
             alt="feature"
-            className="w-full h-[300px] object-cover rounded-md"
+            className="w-full rounded-md"
           />
         </div>
       </div>

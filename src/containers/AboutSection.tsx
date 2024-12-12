@@ -1,4 +1,5 @@
 import React from "react";
+import RoomImage from "../assets/room-image-about.png";
 
 const AboutSection: React.FC = () => {
   return (
@@ -16,9 +17,9 @@ const AboutSection: React.FC = () => {
         </div>
         <div>
           <img
-            src="https://picsum.photos/500/500"
+            src={RoomImage}
             alt="feature"
-            className="w-full h-[500px] object-cover rounded-md"
+            className="w-full md:h-[500px] md:object-cover rounded-md"
           />
         </div>
       </div>
