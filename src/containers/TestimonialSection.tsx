@@ -8,7 +8,6 @@ import {
 import PaginationButton from "../components/testimonial/PaginationButton";
 import RoomImage from "../assets/room-image-testimonial.png";
 
-// Testimonial Section Component
 const TestimonialSection: React.FC = () => {
   const [currentPage, setCurrentPage] = useState<number>(1);
 
