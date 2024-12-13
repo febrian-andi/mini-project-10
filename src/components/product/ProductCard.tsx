@@ -7,7 +7,7 @@ interface ProductCardProps {
 
 const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   return (
-    <div className="bg-white shadow-md rounded-lg p-3">
+    <div className="bg-white shadow-md rounded-lg p-3 hover:scale-105 cursor-pointer transition-transform duration-300">
       <div className="space-y-6">
         <img
           src={product.image}

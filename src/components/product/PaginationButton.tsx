@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/react/24/solid";
+import { HiArrowLeft, HiArrowRight } from "react-icons/hi2";
 
 interface PaginationButtonProps {
   currentPage: number;
@@ -24,7 +24,7 @@ const PaginationButton: React.FC<PaginationButtonProps> = ({
           currentPage === 1 ? "opacity-50 cursor-not-allowed text-gray-500" : ""
         }`}
       >
-        <ArrowLeftIcon className="w-6 h-6" />
+        <HiArrowLeft className="w-6 h-6" />
       </button>
 
       <div className="flex space-x-2">
@@ -47,7 +47,7 @@ const PaginationButton: React.FC<PaginationButtonProps> = ({
             : ""
         }`}
       >
-        <ArrowRightIcon className="w-6 h-6" />
+        <HiArrowRight className="w-6 h-6" />
       </button>
     </div>
   );

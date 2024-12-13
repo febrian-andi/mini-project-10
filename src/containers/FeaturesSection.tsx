@@ -1,11 +1,11 @@
 import React from "react";
-import { CheckCircleIcon } from "@heroicons/react/24/solid";
+import { HiCheckCircle } from "react-icons/hi2";
 import RoomImage from "../assets/room-image-features.png";
 
 const FeaturesSection: React.FC = () => {
   return (
     <section className="px-6 md:px-20 py-20">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 pt-20">
         <div className="hidden md:block">
           <img
             src={RoomImage}
@@ -22,14 +22,14 @@ const FeaturesSection: React.FC = () => {
             management system.
           </p>
           <div className="flex gap-4">
-            <CheckCircleIcon className="w-6 h-6" />
+            <HiCheckCircle className="w-6 h-6" />
             <div>
               <h2 className="text-xl font-semibold">Valuation Service</h2>
               <p className="text-lg">lorem ipsum</p>
             </div>
           </div>
           <div className="flex gap-4">
-            <CheckCircleIcon className="w-6 h-6" />
+            <HiCheckCircle className="w-6 h-6" />
             <div>
               <h2 className="text-xl font-semibold">
                 Development of Furniture Modelss

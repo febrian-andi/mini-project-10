@@ -9,7 +9,7 @@ const StatisticCard: React.FC = () => {
   if (!data) return <p>No data</p>;
 
   return (
-    <div className="px-6 md:px-20">
+    <div className="px-6 md:px-20 absolute -bottom-24 md:-bottom-16 left-0 right-0">
       <div className="bg-[#286F6C] py-10 grid grid-cols-2 md:grid-cols-4 gap-y-10 md:gap-y-0 justify-items-center rounded-3xl">
         <div>
           <h1 className="text-4xl text-white font-bold text-center">{data.experience}</h1>

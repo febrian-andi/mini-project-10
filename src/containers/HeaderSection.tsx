@@ -4,7 +4,7 @@ import Hero from "../components/header/Hero";
 
 const HeaderSection: React.FC = () => {
   return (
-    <section>
+    <section className="relative">
       <Hero />
       <StatisticCard />
     </section>

@@ -1,38 +1,25 @@
 import React from "react";
-import { FaInstagram } from "react-icons/fa";
+import { ShareSocial } from "react-share-social";
 
 const Footer: React.FC = () => {
+  const style = {
+    root: {
+      background: "transparent",
+    },
+    copyContainer: {
+      display: "none"
+    }
+  };
+
   return (
     <footer className="bg-[#15171CFF] text-white px-6 md:px-20">
       <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-4 border-b-2 py-12 border-gray-500">
         <h1 className="text-3xl font-bold text-left">FurniShop</h1>
-        <div className="grid grid-cols-5 gap-4 mt-2 md:mt-0">
-          <a href="#">
-            <button className="bg-[#23262F] text-white p-4 rounded-full hover:bg-[#286F6C]">
-              <FaInstagram className="w-5 h-5" />
-            </button>
-          </a>
-          <a href="#">
-            <button className="bg-[#23262F] text-white p-4 rounded-full hover:bg-[#286F6C]">
-              <FaInstagram className="w-5 h-5" />
-            </button>
-          </a>
-          <a href="#">
-            <button className="bg-[#23262F] text-white p-4 rounded-full hover:bg-[#286F6C]">
-              <FaInstagram className="w-5 h-5" />
-            </button>
-          </a>
-          <a href="#">
-            <button className="bg-[#23262F] text-white p-4 rounded-full hover:bg-[#286F6C]">
-              <FaInstagram className="w-5 h-5" />
-            </button>
-          </a>
-          <a href="#">
-            <button className="bg-[#23262F] text-white p-4 rounded-full hover:bg-[#286F6C]">
-              <FaInstagram className="w-5 h-5" />
-            </button>
-          </a>
-        </div>
+        <ShareSocial
+          url="https://mini-project-10-fan.vercel.app/"
+          socialTypes={["email", "facebook", "telegram", "whatsapp", "linkedin"]}
+          style={style}
+        />
       </div>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-y-6 gap-x-6 py-12">
         <div className="flex flex-col text-start gap-2">
@@ -71,7 +58,7 @@ const Footer: React.FC = () => {
           <a href="#" className="py-2 text-sm">For Small Business</a>
         </div>
       </div>
-      <p className="py-4">&copy;FurniShop 2024. All rights reserved.</p>
+      <p className="py-4 text-center">&copy;FurniShop 2024. All rights reserved.</p>
     </footer>
   );
 };

@@ -11,7 +11,7 @@ const CategoryCard: React.FC<CategoryCardProps> = ({ category }) => {
       <img
         src={category.image}
         alt="category image"
-        className="w-[300px] h-[400px] md:h-[450px] object-cover"
+        className="w-[280px] h-[400px] md:h-[450px] object-cover rounded-md hover:scale-105 transition duration-300"
       />
       <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
         <h1 className="text-4xl font-bold text-white">
